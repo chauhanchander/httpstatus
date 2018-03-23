@@ -41,10 +41,10 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 ## Contributing
 
 <<<<<<< HEAD
-Bug reports and pull requests are welcome on GitHub at https://gitlab.com/cmsc/httpstatus.
+Bug reports and pull requests are welcome on GitHub at https://github.com/cmsc/httpstatus.
 =======
-Bug reports and pull requests are welcome on GitHub at https://gitlab.com/cms/httpstatus.
->>>>>>> 55d2672e778ea8cc7bf309f47c63094d1f41a013
+Bug reports and pull requests are welcome on GitHub at https://github.com/cms/httpstatus.
+>>>>>>> 
 
 ## License
 
