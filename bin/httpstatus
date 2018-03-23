@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require 'httpstatus'
+
+scriptname = File.basename(__FILE__)
+
+if ARGV.length == 4 && ARGV[0] == "http" || ARGV[0] == "https" 
+  website = ARGV[0].to_s + "://" + ARGV[1].to_s 
+  websitename, checkingtimeinterval, timeperiod = website, ARGV[2], ARGV[3]
+  statuswebsite = HttpStatus::StatusCheck.new
+  statuswebsite.Average_Response_Status(websitename, checkingtimeinterval, timeperiod)
+else
+  puts "Usage: #{scriptname} Site_Type(HTTP/Https) Site_Name  Checking_Time_Interval(in seconds)  Time-period(in Minutes)"
+  puts "For Example"
+  puts " ruby #{scriptname} https gitlab.com  10  5 "
+  exit
+end
